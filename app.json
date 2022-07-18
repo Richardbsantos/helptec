@@ -1,0 +1,10 @@
+{
+  "expo": {
+    "name": "helptec",
+    "slug": "helptec",
+    "version": "1.0.0",
+    "assetBundlePatterns": [
+      "**/*"
+    ]
+  }
+}
