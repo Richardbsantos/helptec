@@ -9,15 +9,21 @@ import { Input } from '../components/Input';
 
 export function SignIn(){
     const [name, setName] = useState('');
-    const [password, setPassward ] = useState('');
+    const [password, setPassword ] = useState('');
 
 
     const { colors } = useTheme();
+     
+    function handleSigIn(){
+       console.log(name,password);
+    }
+   
+
     return (
         <VStack flex={1} alignItems="center" bg="gray.600" px={8} pt={24}>
             <Logo/>
             <Heading color="gray.100" fontSize="xl" mt={20} mb={6}> 
-                   Acesse sua Conta {name}
+                   Acesse sua Conta 
             </Heading>
 
             <Input placeholder="E-mail"
@@ -31,9 +37,10 @@ export function SignIn(){
             placeholder="Senha"
             InputLeftElement={<Icon as={<Key color={colors.gray[300]} />} ml={4} />}
             secureTextEntry
+            onChangeText={setPassword}
             />
 
-            <Button title= "Entrar" w="full" />
+            <Button title= "Entrar" w="full" onPress={handleSigIn} />
         </VStack>
     )
 }

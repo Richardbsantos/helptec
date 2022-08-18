@@ -1,4 +1,4 @@
-import {SignIn} from './src/Screens/SignIn';
+import {Home} from './src/Screens/Home';
 
 import { NativeBaseProvider, StatusBar } from "native-base";
 
@@ -17,7 +17,7 @@ export default function App() {
        <StatusBar
          barStyle="light-content"
        />
-       { fontsLoaded ? < SignIn /> :  <Loading/>}
+       { fontsLoaded ? < Home /> :  <Loading/>}
     </NativeBaseProvider>
   );
 }
