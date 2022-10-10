@@ -49,7 +49,7 @@ export function Home() {
 
                  <Filter   
                   type='close' 
-                  title=" Finalizados"
+                  title=" Finalizadoss"
                    />
  
            </HStack> 
